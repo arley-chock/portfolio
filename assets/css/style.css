@@ -57,6 +57,8 @@ body{
 
 /* HEADER */
 header{
+    background-image: url(original.gif);
+    background-size: contain;
     background-color: var(--corBackgroundPrimaria);
     padding: 30px 30px 0;
 }
