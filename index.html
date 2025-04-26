@@ -1,71 +1,67 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- title -->
-    <title>Arley Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arley Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/extends.css" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="navbar__content max-width mb-0">
-        <a href="#header">
-          <img src="assets/logo.png" class="logo" />
-        </a>
-        <ul class="navbar__links">
+  <!-- Fonte e ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <!-- CSS unificado -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Navbar fixa -->
+  <nav class="navbar">
+    <div class="navbar__content max-width">
+      <a href="#header"><img src="assets/logo.png" alt="Logo" class="logo"/></a>
+
+      <ul class="navbar__links">
+        <li><a href="#header">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#exp">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+
+      <!-- Toggle Dark Mode -->
+      <button class="dark-mode-toggle" aria-label="Modo Escuro">🌙</button>
+
+      <!-- Menu Mobile -->
+      <div class="navbar__mobile">
+        <img src="assets/menu.svg" alt="Menu" class="burguer"/>
+        <ul class="mobile__links">
           <li><a href="#header">Início</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#exp">Experiência</a></li>
           <li><a href="#projects">Projetos</a></li>
-          <li><a href="#footer">Contato</a></li>
-          
+          <li><a href="#contact">Contato</a></li>
         </ul>
-        <div class="navbar__mobile">
-          <img src="assets/menu.svg" alt="menu" class="burguer" />
-          <ul class="mobile__links">
-            <li><a href="#header">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#exp">Experiência</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#footer">Contato</a></li>
-            
-          </ul>
-        </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- header -->
-    <header id="header" class="max-width">
+  <main>
+    <!-- Header -->
+    <header id="header" class="header max-width">
       <div class="header__left">
-        <h1>Olá! Sou Arley do Nascimento Desenvolvedor e Analista Fullstack</h1>
+        <h1>Olá! Sou Arley do Nascimento, Desenvolvedor e Analista Fullstack</h1>
         <p>
-          É um prazer conhecê-lo! <br>
-
-Meu nome é Arley, Atualmente curso Sistemas de Informação. Minha paixão por tecnologia me impulsiona a buscar melhorias constantes e a me dedicar intensamente ao desenvolvimento de minhas habilidades.
-
-A seguir, apresento meu portfólio, que reúne projetos que ilustram minha capacidade de superar desafios e aprimorar competências. Cada trabalho reflete meu compromisso em me tornar um profissional de destaque na área de tecnologia da informação..
-         </p>
+          É um prazer conhecê-lo! Meu nome é Arley, curso Sistemas de Informação e minha paixão por tecnologia me impulsiona a sempre buscar melhorias.
+        </p>
         <a href="#about" class="btn btn-primary">Saiba Mais!</a>
       </div>
       <div class="header__right">
         <div class="header__image">
-          <img src="assets/download20240801000817.png" alt="Arley do Nascimento" class="lucas" />
-          <img src="assets/abstract.svg" alt="background" class="background" />
+          <img src="assets/download20240801000817.png" alt="Arley do Nascimento" class="lucas"/>
+          <img src="assets/abstract.svg" alt="Background" class="background"/>
         </div>
       </div>
     </header>
@@ -74,232 +70,167 @@ A seguir, apresento meu portfólio, que reúne projetos que ilustram minha capac
     <section id="about" class="about max-width">
       <div class="about__left">
         <h2 class="secondary-title">Quem sou eu?</h2>
-        <p>
-          Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
-          meu trabalho?
+        <p class="about-text">
+          Sou apaixonado por tecnologia, criatividade e desafios. Desde pequeno, sempre fui curioso e gostei de entender como as coisas funcionam. Hoje, aplico essa curiosidade no desenvolvimento de soluções digitais, buscando sempre aprender algo novo e entregar o melhor resultado possível. Acredito que a tecnologia é uma ponte para transformar ideias em realidade e adoro colaborar em projetos que impactam positivamente a vida das pessoas.
         </p>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/ar.ley_cb/"><img src="assets/instagram.svg" alt="Instagram" /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/arley-do-nascimento-vinagre/"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
-          </li>
+        <p>Conecte-se comigo nas redes sociais e saiba mais sobre meu trabalho:</p>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/ar.ley_cb/"><img src="assets/instagram.svg" alt="Instagram"/></a></li>
+          <li><a href="https://www.linkedin.com/in/arley-do-nascimento-vinagre/"><img src="assets/linkedin.svg" alt="LinkedIn"/></a></li>
         </ul>
       </div>
       <div class="about__right">
-        <h3 class="tertiary-title mb-m">
-          Desenvolvedor fullstack apaixonado por tecnologia e soluções criativas
-        </h3>
-        <p>sou um desenvolvedor fullstack apaixonado por
-          tecnologia, escrevo textos e faço apps, mesmo com algumas dificuldades de aprendizado me disponho a entregar o melhor,
-          Boas experiências com:
-          <ul class="ultech">
-            <li>
-                <img src="assets/logostech/react.svg" alt="React">
-                <p>React</p>
-            </li>
-            <li>
-                <img src="assets/logostech/asp.png" alt="ASP.NET">
-                <p>ASP.NET</p>
-            </li>
-            <li>
-                <img src="assets/logostech/boot.svg" alt="Bootstrap">
-                <p>Bootstrap</p>
-            </li>
-            <li>
-                <img src="assets/logostech/Vue.svg" alt="Vue">
-                <p>Vue</p>
-            </li>
-            <li>
-                <img src="assets/logostech/html5.svg" alt="HTML5">
-                <p>HTML5</p>
-            </li>
-            <li>
-                <img src="assets/logostech/Js.svg" alt="JavaScript">
-                <p>JavaScript</p>
-            </li>
-            <li>
-                <img src="assets/logostech/tail.svg" alt="Tailwind">
-                <p>Tailwind</p>
-            </li>
-            <li>
-                <img src="assets/logostech/ts.svg" alt="TypeScript">
-                <p>TypeScript</p>
-            </li>
-            <li>
-                <img src="assets/logostech/css3.svg" alt="CSS3">
-                <p>CSS3</p>
-            </li>
-            <li>
-                <img src="assets/logostech/sql.png" alt="SQL">
-                <p>SQL</p>
-            </li>
-            <li>
-                <img src="assets/logostech/svelt.png" alt="Svelte">
-                <p>Svelte</p>
-            </li>
-            <li>
-                <img src="assets/logostech/node.png" alt="Node.js">
-                <p>Node.js</p>
-            </li>
+        <h3 class="tertiary-title mb-m">Fullstack apaixonado por tecnologia e soluções criativas</h3>
+        <p>Sou desenvolvedor fullstack, escrevo textos e faço apps; mesmo com desafios de aprendizado, sempre entrego meu melhor.</p>
+        <p>Tenho boas experiências com:</p>
+        <ul class="ultech">
+          <li><img src="assets/logostech/react.svg" alt="React"/><p>React</p></li>
+          <li><img src="assets/logostech/asp.png" alt="ASP.NET"/><p>ASP.NET</p></li>
+          <li><img src="assets/logostech/boot.svg" alt="Bootstrap"/><p>Bootstrap</p></li>
+          <li><img src="assets/logostech/Vue.svg" alt="Vue"/><p>Vue</p></li>
+          <li><img src="assets/logostech/html5.svg" alt="HTML5"/><p>HTML5</p></li>
+          <li><img src="assets/logostech/Js.svg" alt="JavaScript"/><p>JavaScript</p></li>
+          <li><img src="assets/logostech/tail.svg" alt="Tailwind"/><p>Tailwind</p></li>
+          <li><img src="assets/logostech/ts.svg" alt="TypeScript"/><p>TypeScript</p></li>
+          <li><img src="assets/logostech/css3.svg" alt="CSS3"/><p>CSS3</p></li>
+          <li><img src="assets/logostech/sql.png" alt="SQL"/><p>SQL</p></li>
+          <li><img src="assets/logostech/svelt.png" alt="Svelte"/><p>Svelte</p></li>
+          <li><img src="assets/logostech/node.png" alt="Node.js"/><p>Node.js</p></li>
         </ul>
-          
-        </p>
-        <p>
-          Sou apaixonado por tecnologias e estou sempre dedicado a aprender mais.
-        </p>
       </div>
     </section>
 
-    <!-- habilidades -->
+    <!-- Habilidades -->
     <section id="skills" class="skills">
       <div class="skills__content max-width">
         <h2 class="tertiary-title">Minhas habilidades</h2>
-        <p class="description">
-          Descubra as habilidades e ferramentas que domino e que me permitem
-          criar soluções criativas e funcionais para meus clientes.
-        </p>
+        <p class="description">Ferramentas e conhecimentos que me permitem criar soluções criativas e funcionais.</p>
         <ul>
           <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/iconmonstr-laptop-5.svg" alt="Desenvolvimento Web" />
-            </div>
+            <div class="image-container"><img src="assets/iconmonstr-laptop-5.svg" alt="Web"/></div>
             <h3>Desenvolvimento Web e Software</h3>
-            <p>
-              Experiência em desenvolvimento fullstack com foco em tecnologias
-              modernas.
-            </p>
+            <p>Fullstack com foco em tecnologias modernas.</p>
           </li>
           <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/iconmonstr-star-2.svg" alt="Web Design" />
-            </div>
+            <div class="image-container"><img src="assets/iconmonstr-star-2.svg" alt="Design"/></div>
             <h3>Web Design</h3>
-            <p>
-              Habilidade em criar layouts modernos e responsivos, com foco na
-              experiência do usuário.
-            </p>
+            <p>Layouts modernos e responsivos.</p>
           </li>
           <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/iconmonstr-smartphone-14.svg" alt="UX/UI Design" />
-            </div>
+            <div class="image-container"><img src="assets/iconmonstr-smartphone-14.svg" alt="UX/UI"/></div>
             <h3>UX/UI Design</h3>
-            <p>
-              Conhecimentos em design de interface e experiência do usuário
-              visualmente atraentes e intuitivas.
-            </p>
+            <p>Interfaces atraentes e intuitivas.</p>
           </li>
           <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/iconmonstr-script-5.svg" alt="Documentação" />
-            </div>
+            <div class="image-container"><img src="assets/iconmonstr-script-5.svg" alt="Docs"/></div>
             <h3>Documentação</h3>
-            <p>
-              Experiência Com documentações de app para melhor entrega ao cliente.
-            </p>
+            <p>Documentação clara para clientes.</p>
           </li>
         </ul>
       </div>
     </section>
 
+    <!-- Experiência -->
     <section id="exp" class="exp">
-      <div class="exp__content">
-        <h2 class="secondary-title">experiências de trabalho</h2>
-        <p>
-          Experiências de trabalho calorosas vividas por mim.
-        </p>
-          <ul>
-            <li>
-              <div class="image">
-                <img src="assets/twitter_400x400.jpg" alt="CREMEB" />
-              </div>
-              <div class="exp__info">
-                <h3 class="fontfam">
-                  Cremeb - Conselho Regional De Medicina Do Estado Da Bahia.
-                </h3>
-                <p>
-                  Durante meu estágio no CREMEB, fui ativamente envolvido em projetos utilizando tecnologias como ASP.NET, C#, .NET Core e Blazor Server Side. Desenvolvi habilidades cruciais em ambientes profissionais, incluindo migração de dados, Domain-Driven Design (DDD) e a aplicação de princípios de Clean Code. Além disso, minha proficiência em JavaScript e familiaridade com o Figma permitiram que eu transformasse conceitos criativos em designs atraentes e altamente funcionais.
-                </p>
-              </div>
-            </li>
-          </ul>
+      <div class="exp__content max-width">
+        <h2 class="secondary-title">Experiências de trabalho</h2>
+        <p>Projetos e estágios que marcaram minha jornada.</p>
+        <ul>
+          <li>
+            <div class="image"><img src="assets/twitter_400x400.jpg" alt="CREMEB"/></div>
+            <div class="exp__info">
+              <h3>CREMEB</h3>
+              <p>Estágio em ASP.NET, C#, .NET Core, Blazor e DDD. Transformei conceitos do Figma em designs funcionais.</p>
+            </div>
+          </li>
+          <li>
+            <div class="image"><img src="assets/escaladaonline_logo.png" alt="Escalada Online"/></div>
+            <div class="exp__info">
+              <h3>Escalada Online</h3>
+              <p>Desenvolvimento de interfaces modernas em ASP.NET, C# e JavaScript.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      
     </section>
-
-
-
-
 
     <!-- Projetos -->
     <section id="projects" class="projects max-width">
       <div class="projects__content">
         <h2 class="secondary-title">Projetos em Destaque</h2>
-        <p>
-          Ideias que podem parecer legais ou sem contexto, de uma olhada.
-        </p>
+        <p>Ideias e implementações para inspirar.</p>
       </div>
       <ul>
         <li>
-          <div class="image">
-            <img src="assets/blue-fire-calatop-blue-fire.gif" alt="AnAo" />
-          </div>
+          <div class="image"><img src="assets/blue-fire-calatop-blue-fire.gif" alt="AnAo"/></div>
           <div class="projects__info">
-            <h3 class="fontfam">
-              A nightmare after opera
-            </h3>
-            <p>
-              Simplesmente uma ideia vinda da pandemia, a qual criei uma historia e me perguntei, por que não um site? Então surgiu esta ideia,
-              criado apenas em Html5, Css3 e JavaScript, mão pura!
-            </p>
-            <a href="https://arley-chock.github.io/a-nightmare-after-opera/">Leia mais &rarr;</a>
+            <h3>A Nightmare After Opera</h3>
+            <p>Site em HTML5, CSS3 e JS puro.</p>
+            <div class="project-links">
+              <a href="https://arley-chock.github.io/a-nightmare-after-opera/">Visualizar projeto &rarr;</a>
+              <a href="https://github.com/arley-chock/a-nightmare-after-opera">Ver no GitHub <i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
           </div>
         </li>
         <li>
-          <div class="image">
-            <img src="assets/trips.png" alt="trips" />
-          </div>
+          <div class="image"><img src="assets/trips.png" alt="FSWtrips"/></div>
           <div class="projects__info">
-            <h3 class="fontfam">
-              FSWtrips - Agende seu hotel!
-            </h3>
-            <p>
-              O projeto de site de hotelaria utiliza uma combinação de tecnologias modernas para oferecer uma experiência eficiente e intuitiva aos usuários. A stack tecnológica inclui Vercel como plataforma de hospedagem, Prisma como ORM (Object-Relational Mapping) para interação com o banco de dados, Supabase para gerenciamento de dados em tempo real, e Node.js em conjunto com Next.js para o desenvolvimento do servidor e da interface do usuário.
-            </p>
-            <a href="https://fsw-trips-eta.vercel.app/">Leia mais &rarr;</a>
+            <h3>FSWtrips</h3>
+            <p>Aplicação de reservas de viagens com autenticação e pagamentos.</p>
+            <div class="project-links">
+              <a href="https://fsw-trips-eta.vercel.app/">Visualizar projeto &rarr;</a>
+              <a href="https://github.com/arley-chock/fsw-trips">Ver no GitHub <i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="image"><img src="assets/japanese-app.png" alt="App Japonês"/></div>
+          <div class="projects__info">
+            <h3>App Pessoal para Aprender Japonês</h3>
+            <p>Aplicativo mobile em desenvolvimento para auxiliar nos estudos de japonês, com flashcards, quizzes e acompanhamento de progresso.</p>
+            <div class="project-links">
+              <a href="#">Visualizar projeto &rarr;</a>
+              <a href="#">Ver no GitHub <i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Expo</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
           </div>
         </li>
       </ul>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer__content max-width mb-0">
-        <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
-        <p class="mb-m">
-          Ficarei feliz em saber mais sobre seus projetos e como podemos
-          trabalhar juntos para torná-los realidade.
-        </p>
-        <div class="footer__contact mb-m">
-          <li>
-            <a href="mailto:nascimentoarley@gmail.com"
-              ><strong>E-mail:</strong> nascimentoarley@gmail.com</a
-            >
-          </li>
-        </div>
-        <ul class="mb-l">
-          <li>
-            <a href="https://github.com/arley-chock"><img src="assets/github.svg" alt="Github" /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/arley-do-nascimento-vinagre-3102201b4/"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
-          </li>
-        </ul>
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer__content max-width mb-0">
+      <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+      <p class="mb-m">Ficarei feliz em saber mais sobre seus projetos.</p>
+      <div class="footer__contact mb-m">
+        <a href="mailto:nascimentoarley@gmail.com"><strong>E-mail:</strong> nascimentoarley@gmail.com</a>
       </div>
-    </footer>
-    <!-- script -->
-    <script src="scripts/index.js"></script>
-  </body>
+      <ul class="mb-l">
+        <li><a href="https://github.com/arley-chock"><img src="assets/github.svg" alt="Github"/></a></li>
+        <li><a href="https://www.linkedin.com/in/arley-do-nascimento-vinagre-3102201b4/"><img src="assets/linkedin.svg" alt="LinkedIn"/></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
 </html>

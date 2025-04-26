@@ -1,11 +1,56 @@
-# Portfólio Pessoal - Arley
+# Portfólio Profissional
 
-Este é o meu portfólio pessoal, onde compartilho informações sobre mim, meus projetos e habilidades.
+Este é um portfólio profissional moderno e responsivo desenvolvido com HTML, CSS e JavaScript.
 
-## Contato
+## Características
 
-- **Nome:** Arley
-- **E-mail:** nascimentoarley@gmail.com
-- **LinkedIn:** [Arley do Nascimento Vinagre](https://www.linkedin.com/in/arley-do-nascimento-vinagre/)
+- Design moderno e responsivo
+- Animações suaves
+- Modo escuro
+- Navegação suave
+- Seções bem organizadas
+- Otimizado para SEO
+- Acessível
 
-Sinta-se à vontade para entrar em contato comigo para colaborações ou apenas para trocar ideias!
+## Tecnologias Utilizadas
+
+- HTML5
+- CSS3 (com variáveis CSS)
+- JavaScript (ES6+)
+- Font Awesome (para ícones)
+- Google Fonts
+
+## Estrutura do Projeto
+
+```
+portfolio/
+├── assets/
+│   ├── images/
+│   └── icons/
+├── css/
+│   └── extends.css
+├── scripts/
+│   └── index.js
+├── index.html
+└── README.md
+```
+
+## Como Usar
+
+1. Clone o repositório
+2. Abra o arquivo `index.html` em seu navegador
+3. Personalize o conteúdo conforme necessário
+
+## Personalização
+
+- Altere as cores no arquivo `css/extends.css` (variáveis CSS)
+- Modifique o conteúdo no arquivo `index.html`
+- Adicione suas próprias imagens na pasta `assets/images`
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias ou reportar problemas.
+
+## Licença
+
+Este projeto está sob a licença MIT.
